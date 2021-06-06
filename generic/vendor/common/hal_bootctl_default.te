@@ -1,2 +1,5 @@
 # getattr permission for vendor_uefi_block_device
 allow hal_bootctl_default vendor_uefi_block_device:blk_file getattr;
+
+# sys_admin capabilities
+allow hal_bootctl_default self:capability sys_admin;
