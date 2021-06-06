@@ -59,3 +59,6 @@ r_dir_file(hal_bluetooth_default, mnt_vendor_file)
 
 # Access lbsoc_helper to bluetooth
 use_libsoc_helper(hal_bluetooth_default)
+
+allow hal_bluetooth_default vendor_tombstone_data_file:dir rw_dir_perms;
+allow hal_bluetooth_default vendor_tombstone_data_file:file create_file_perms;
